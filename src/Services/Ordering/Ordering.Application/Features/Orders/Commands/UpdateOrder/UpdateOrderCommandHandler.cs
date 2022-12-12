@@ -36,9 +36,9 @@ namespace Ordering.Application.Features.Orders.Commands.UpdateOrder
 
             _mapper.Map(request, orderToUpdate, typeof(UpdateOrderCommand), typeof(Order));
 
-            var orderResult = await _orderRepository.UpdateAsync(orderToUpdate);
+            await _orderRepository.UpdateAsync(orderToUpdate);
 
-            _logger.LogInformation($"Order {orderResult.Id} is successfully updated.");
+            _logger.LogInformation($"Order {orderToUpdate.Id} is successfully updated.");
 
             return Unit.Value;
         }
