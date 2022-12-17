@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.4.33110.190
+VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{45157F56-3CA5-41CC-ACEF-0429B9A4FB07}"
 EndProject
@@ -37,9 +37,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "Buildi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{F7B8A0C4-782F-4746-B0FD-66CCDD0BA45D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{2DAD0986-EA68-42EA-956F-0F198F0B3FA1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{2DAD0986-EA68-42EA-956F-0F198F0B3FA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Aggregator", "ApiGateways\Shopping.Aggregator\Shopping.Aggregator.csproj", "{B756A8AB-FEC1-45A5-8A86-81AE30A12AC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Aggregator", "ApiGateways\Shopping.Aggregator\Shopping.Aggregator.csproj", "{B756A8AB-FEC1-45A5-8A86-81AE30A12AC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{0B66BE04-3EDF-449E-AB2C-CE2A035A4D71}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingWebApp", "WebApps\ShoppingWebApp\ShoppingWebApp.csproj", "{B9976164-19A5-48A8-B9F5-11C25261301C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +99,10 @@ Global
 		{B756A8AB-FEC1-45A5-8A86-81AE30A12AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B756A8AB-FEC1-45A5-8A86-81AE30A12AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B756A8AB-FEC1-45A5-8A86-81AE30A12AC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9976164-19A5-48A8-B9F5-11C25261301C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9976164-19A5-48A8-B9F5-11C25261301C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9976164-19A5-48A8-B9F5-11C25261301C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9976164-19A5-48A8-B9F5-11C25261301C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -115,6 +123,7 @@ Global
 		{CE5AFC9A-68E8-4998-9F2B-2F8BAEB85BF8} = {7ED32DCB-6BF4-489F-97A0-839346138D52}
 		{2DAD0986-EA68-42EA-956F-0F198F0B3FA1} = {F7B8A0C4-782F-4746-B0FD-66CCDD0BA45D}
 		{B756A8AB-FEC1-45A5-8A86-81AE30A12AC8} = {F7B8A0C4-782F-4746-B0FD-66CCDD0BA45D}
+		{B9976164-19A5-48A8-B9F5-11C25261301C} = {0B66BE04-3EDF-449E-AB2C-CE2A035A4D71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B1F683AA-7E77-4DEA-89A5-7999E88A396F}
