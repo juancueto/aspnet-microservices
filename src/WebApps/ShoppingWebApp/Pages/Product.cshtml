@@ -23,14 +23,23 @@
         <div class="col-12 col-sm-3">
             <div class="card bg-light mb-3">
                 <div class="card-header bg-primary text-white text-uppercase"><i class="fa fa-list"></i> Categories</div>
-                <ul class="list-group category_block">
+                @*<ul class="list-group category_block">
 
                     @foreach (var category in Model.CategoryList)
                     {
-                        <li class="list-group-item"><a asp-page="Product" asp-route-categoryName="@category">@category</a></li>
+                        <li class="list-group-item list-group-item-action"><a asp-page="Product" asp-route-categoryName="@category">@category</a></li>
                     }
 
-                </ul>
+                </ul>*@
+
+                <div class="list-group category_block">
+
+                    @foreach (var category in Model.CategoryList)
+                    {
+                        <a asp-page="Product" class="list-group-item list-group-item-action" is-active-route asp-route-categoryName="@category">@category</a>
+                    }
+
+                </div>
             </div>
 
             <div class="card bg-light mb-3">
